@@ -168,3 +168,16 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+@media screen and (max-width: 768px) {
+  .app {
+    grid-template-columns: 90%; /* Adjust the width as needed */
+  }
+}
+
+/* Media Query for Mobile View (480px and below) */
+@media screen and (max-width: 480px) {
+  .app {
+    grid-template-columns: 90%; /* Adjust the width as needed */
+  }
+}

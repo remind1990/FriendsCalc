@@ -2,20 +2,20 @@ export const initialFriends = [
   {
     id: 118836,
     name: 'Sasha🧔🏻',
-    image: 'https://i.pravatar.cc/48?u=118836',
+    image: '/img/sasha.png',
     balance: 0,
   },
   {
     id: 933372,
     name: 'Olya😍',
-    image: 'https://i.pravatar.cc/48?u=933372',
+    image: '/img/olya.png',
     balance: 0,
     love: true,
   },
   {
     id: 499476,
     name: 'Olya💆🏻‍♀️',
-    image: 'https://i.pravatar.cc/48?u=499476',
+    image: '/img/olyaS.png',
     balance: 0,
   },
   {
