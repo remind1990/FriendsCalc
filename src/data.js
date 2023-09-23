@@ -20,7 +20,7 @@ export const initialFriends = [
   },
   {
     id: 2323232,
-    name: 'Kyryll🧔🏽‍♀️',
+    name: 'Kirill🧔🏽‍♀️',
     image: 'https://i.pravatar.cc/48?u=420076',
     balance: 0,
   },
