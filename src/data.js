@@ -21,7 +21,7 @@ export const initialFriends = [
   {
     id: 2323232,
     name: 'Kirill🧔🏽‍♀️',
-    image: 'https://i.pravatar.cc/48?u=420076',
+    image: '/img/kirill.png',
     balance: 0,
   },
 ];
