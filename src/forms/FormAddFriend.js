@@ -15,7 +15,7 @@ export default function FormAddFriend({ addFriend }) {
         const newFiend = {
           name,
           image: `${image}?=${id}`,
-          banalce: 0,
+          balance: 0,
           id,
         };
         addFriend(newFiend);
