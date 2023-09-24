@@ -40,26 +40,36 @@ export default function App() {
     setSelectedFriend(null);
   };
   return (
-    <div className="app">
-      <div className="sidebar">
-        <FriendsList
-          friends={friends}
-          onSelect={handleSelected}
-          selectedFriend={selectedFriend}
-        />
-        {showAddFriend && (
-          <FormAddFriend addFriend={handleAddNewFriend} />
+    <div className="wrapper">
+      <h1
+        style={{
+          margin: '20px auto',
+          textAlign: 'center',
+        }}
+      >
+        Welcome friends, you can share your bills here
+      </h1>
+      <div className="app">
+        <div className="sidebar">
+          <FriendsList
+            friends={friends}
+            onSelect={handleSelected}
+            selectedFriend={selectedFriend}
+          />
+          {showAddFriend && (
+            <FormAddFriend addFriend={handleAddNewFriend} />
+          )}
+          <SharedButton onClick={handleShowAddFriend}>
+            {showAddFriend ? 'close' : 'Add Friend'}
+          </SharedButton>
+        </div>
+        {selectedFriend && (
+          <FormSplitBill
+            {...selectedFriend}
+            onSplitBill={handleSplitBill}
+          />
         )}
-        <SharedButton onClick={handleShowAddFriend}>
-          {showAddFriend ? 'close' : 'Add Friend'}
-        </SharedButton>
       </div>
-      {selectedFriend && (
-        <FormSplitBill
-          {...selectedFriend}
-          onSplitBill={handleSplitBill}
-        />
-      )}
     </div>
   );
 }

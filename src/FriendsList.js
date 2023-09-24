@@ -29,12 +29,12 @@ function Friend({ friend, onSelect, selectedFriend }) {
       <img src={image} alt="friend" />
       <h3>{name}</h3>
       {balance < 0 && (
-        <p className="red">
+        <p className="red bold">
           You owe {name} {Math.abs(balance)} 🇨🇦💲
         </p>
       )}
       {balance > 0 && (
-        <p className="green">
+        <p className="green bold">
           {name} ows {Math.abs(balance)} 🇨🇦💲
         </p>
       )}

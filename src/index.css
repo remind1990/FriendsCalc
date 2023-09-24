@@ -1,8 +1,8 @@
 :root {
-  --color-lightest: #fff4e6;
-  --color-light: #ffe8cc;
-  --color-medium: #ffa94d;
-  --color-dark: #ff922b;
+  --color-lightest: #040404;
+  --color-light: rgb(50, 50, 50);
+  --color-medium: hsl(275, 57%, 68%);
+  --color-dark: #b857fe;
 }
 
 * {
@@ -20,12 +20,26 @@ html {
 
 body {
   height: 100vh;
-  color: #495057;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('/public/img/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
+.wrapper {
+  background: rgb(221, 216, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(221, 216, 0, 0.5200674019607843) 39%,
+    rgba(47, 193, 194, 0.486453956582633) 62%
+  );
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+}
 .app {
   min-height: 66vh;
   display: grid;
@@ -101,20 +115,27 @@ body {
 }
 
 .green {
-  color: #66a80f;
+  color: #8df505;
 }
 
 .red {
-  color: #e03131;
+  color: #f01616;
 }
-
+.bold {
+  font-weight: bolder;
+}
 form {
   font-size: 1.6rem;
   display: grid;
   align-items: center;
   gap: 1.2rem;
 
-  background-color: var(--color-lightest);
+  background: rgb(124, 126, 125);
+  background: linear-gradient(
+    0deg,
+    rgba(124, 126, 125, 0.8477984943977591) 12%,
+    rgba(0, 0, 0, 0.9150253851540616) 42%
+  );
   border-radius: 7px;
 }
 
@@ -122,6 +143,7 @@ form {
   grid-template-columns: 1fr 1.5fr;
   margin-bottom: 1.6rem;
   padding: 1.2rem;
+  background: #040404;
 }
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
@@ -141,8 +163,9 @@ label::first-letter {
 input,
 select {
   font-family: inherit;
-  color: inherit;
+  color: black;
   font-size: 1.5rem;
+  font-weight: bold;
   padding: 0.7rem;
   text-align: center;
   border: 1px solid var(--color-light);
